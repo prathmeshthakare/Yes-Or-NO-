@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Please Bae... </title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: lightpink;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    h2 {
+        color: #666;
+    }
+
+    img {
+        width: 200px;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+    }
+
+    #yesButton, #noButton {
+        background: white;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 20px;
+    }
+
+    #noButton.move {
+        position: absolute;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>My Dear Chimne, Do you love me ?😊</h1>
+    <h2>Please say yes!</h2>
+    <img id="image" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmNzZTFsMWlmNWNqYjVuN2IxaTA0aGp3ZG13ZGc3MDh3aHdkMzFuZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/c76IJLufpNwSULPk77/giphy.gif" alt="Placeholder Image">
+    <button id="yesButton">Yes</button>
+    <button id="noButton">No</button>
+</div>
+
+<!-- <script>
+    let clickCount = 0;
+
+    const yesButton = document.getElementById('yesButton');
+    const noButton = document.getElementById('noButton');
+    const heading = document.querySelector('h1');
+    const subheading = document.querySelector('h2');
+    const image = document.getElementById('image');
+
+    const imageUrls = [
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWZsMDB1dGI5N2djNjk4OHE4bDRudzd6YmIzZ3IyY2oxaGczZTZwbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gDfteqLchLcRTtjAD7/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTltY3oxb2hxa3g1bmQ1cmthYm5lcnBpMWM1ZWdpbXhtaWFobTRjOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/M90mJvfWfd5mbUuULX/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWg4Y3Frc3locThqN3Z0OTUzN2dyZHQxY3F3Ym92bzFnN3RycHE5bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eiRpSPB8OSGVcbkOIJ/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMG54c3J1cXNybThtb2VycGpmbW5paHppcDB0Z2Njd2xxMjN3MXJoMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o6gDZ9unSrDk3EuR2/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnVzZ3U1N2JodG1rMTU5dHVhOHYzM3liaDF3eDR1eGJ1N3YweWgyYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9X8UlqKhaSPz4n7BkW/giphy.gif',
+    ];
+
+    noButton.addEventListener('click', () => {
+        clickCount++;
+        if (clickCount < 5) {
+            heading.textContent = "Pah punha V4 kr ekda ... ";
+            subheading.textContent = `Click "yes".`;
+            image.src = imageUrls[clickCount];
+        }
+
+        if (clickCount === 4) {
+            heading.textContent = "How about now?";
+            subheading.textContent = `Please click "Yes" now.`;
+            noButton.classList.add('move');
+        }
+    });
+
+    noButton.addEventListener('mouseover', () => {
+        if (clickCount === 4) {
+            const x = Math.floor(Math.random() * (window.innerWidth - 100));
+            const y = Math.floor(Math.random() * (window.innerHeight - 50));
+            noButton.style.left = `${x}px`;
+            noButton.style.top = `${y}px`;
+        }
+    });
+
+    yesButton.addEventListener('click', () => {
+        heading.textContent = "Hehe I knew it!";
+        subheading.textContent = "I love you";
+        image.src = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGM3MW92Zms4a3ZtamxibnZidHB1d3FoMWVzdmE3bzhxZWppaWN2OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bA5cblwksWXDOwSzUI/giphy.gif";
+        yesButton.disabled = true;
+        noButton.disabled = true;
+        yesButton.style.display = "none";
+        noButton.style.display = "none";
+    });
+</script> -->
+<!-- <script>
+    let clickCount = 0;
+
+    const yesButton = document.getElementById('yesButton');
+    const noButton = document.getElementById('noButton');
+    const heading = document.querySelector('h1');
+    const subheading = document.querySelector('h2');
+    const image = document.getElementById('image');
+
+    const imageUrls = [
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWZsMDB1dGI5N2djNjk4OHE4bDRudzd6YmIzZ3IyY2oxaGczZTZwbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gDfteqLchLcRTtjAD7/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTltY3oxb2hxa3g1bmQ1cmthYm5lcnBpMWM1ZWdpbXhtaWFobTRjOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/M90mJvfWfd5mbUuULX/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWg4Y3Frc3locThqN3Z0OTUzN2dyZHQxY3F3Ym92bzFnN3RycHE5bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eiRpSPB8OSGVcbkOIJ/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMG54c3J1cXNybThtb2VycGpmbW5paHppcDB0Z2Njd2xxMjN3MXJoMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o6gDZ9unSrDk3EuR2/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnVzZ3U1N2JodG1rMTU5dHVhOHYzM3liaDF3eDR1eGJ1N3YweWgyYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9X8UlqKhaSPz4n7BkW/giphy.gif',
+    ];
+
+    const messages = [
+        "Text for Image 1", // यहां पहले इमेज के लिए टेक्स्ट लिखें
+        "Text for Image 2", // यहां दूसरे इमेज के लिए टेक्स्ट लिखें
+        "Text for Image 3", // यहां तीसरे इमेज के लिए टेक्स्ट लिखें
+        "Text for Image 4", // यहां चौथे इमेज के लिए टेक्स्ट लिखें
+        "Text for Image 5", // यहां पांचवें इमेज के लिए टेक्स्ट लिखें
+    ];
+
+    function updateTextAndImage(count) {
+        image.src = imageUrls[count]; // इमेज अपडेट करें
+        subheading.textContent = messages[count]; // सबहेडिंग टेक्स्ट अपडेट करें
+    }
+
+    noButton.addEventListener('click', () => {
+        if (clickCount < 5) {
+            updateTextAndImage(clickCount);
+            clickCount++;
+        }
+        if (clickCount === 5) {
+            heading.textContent = "How about now?";
+            noButton.classList.add('move');
+        }
+    });
+
+    noButton.addEventListener('mouseover', () => {
+        if (clickCount === 5) {
+            const x = Math.floor(Math.random() * (window.innerWidth - 100));
+            const y = Math.floor(Math.random() * (window.innerHeight - 50));
+            noButton.style.left = `${x}px`;
+            noButton.style.top = `${y}px`;
+        }
+    });
+
+    yesButton.addEventListener('click', () => {
+        heading.textContent = "Hehe I knew it!";
+        subheading.textContent = "I love you";
+        image.src = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGM3MW92Zms4a3ZtamxibnZidHB1d3FoMWVzdmE3bzhxZWppaWN2OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bA5cblwksWXDOwSzUI/giphy.gif";
+        yesButton.disabled = true;
+        noButton.disabled = true;
+        yesButton.style.display = "none";
+        noButton.style.display = "none";
+    });
+</script> -->
+<!-- <script>
+    let clickCount = 0;
+
+    const yesButton = document.getElementById('yesButton');
+    const noButton = document.getElementById('noButton');
+    const heading = document.querySelector('h1');
+    const subheading = document.querySelector('h2');
+    const image = document.getElementById('image');
+
+    const imageUrls = [
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWZsMDB1dGI5N2djNjk4OHE4bDRudzd6YmIzZ3IyY2oxaGczZTZwbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gDfteqLchLcRTtjAD7/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTltY3oxb2hxa3g1bmQ1cmthYm5lcnBpMWM1ZWdpbXhtaWFobTRjOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/M90mJvfWfd5mbUuULX/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWg4Y3Frc3locThqN3Z0OTUzN2dyZHQxY3F3Ym92bzFnN3RycHE5bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eiRpSPB8OSGVcbkOIJ/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMG54c3J1cXNybThtb2VycGpmbW5paHppcDB0Z2Njd2xxMjN3MXJoMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o6gDZ9unSrDk3EuR2/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnVzZ3U1N2JodG1rMTU5dHVhOHYzM3liaDF3eDR1eGJ1N3YweWgyYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9X8UlqKhaSPz4n7BkW/giphy.gif',
+    ];
+
+    const headings = [
+        "Heading for Image 1", // यहां पहले इमेज की हेडिंग लिखें
+        "Heading for Image 2", // यहां दूसरे इमेज की हेडिंग लिखें
+        "Heading for Image 3", // यहां तीसरे इमेज की हेडिंग लिखें
+        "Heading for Image 4", // यहां चौथे इमेज की हेडिंग लिखें
+        "Heading for Image 5", // यहां पांचवें इमेज की हेडिंग लिखें
+    ];
+
+    const messages = [
+        "Text for Image 1", // यहां पहले इमेज के लिए टेक्स्ट लिखें
+        "Text for Image 2", // यहां दूसरे इमेज के लिए टेक्स्ट लिखें
+        "Text for Image 3", // यहां तीसरे इमेज के लिए टेक्स्ट लिखें
+        "Text for Image 4", // यहां चौथे इमेज के लिए टेक्स्ट लिखें
+        "Text for Image 5", // यहां पांचवें इमेज के लिए टेक्स्ट लिखें
+    ];
+
+    function updateTextAndImage(count) {
+        image.src = imageUrls[count]; // इमेज अपडेट करें
+        heading.textContent = headings[count]; // हेडिंग अपडेट करें
+        subheading.textContent = messages[count]; // सबहेडिंग टेक्स्ट अपडेट करें
+    }
+
+    noButton.addEventListener('click', () => {
+        if (clickCount < 5) {
+            updateTextAndImage(clickCount);
+            clickCount++;
+        }
+        if (clickCount === 5) {
+            heading.textContent = "How about now?";
+            noButton.classList.add('move');
+        }
+    });
+
+    noButton.addEventListener('mouseover', () => {
+        if (clickCount === 5) {
+            const x = Math.floor(Math.random() * (window.innerWidth - 100));
+            const y = Math.floor(Math.random() * (window.innerHeight - 50));
+            noButton.style.left = `${x}px`;
+            noButton.style.top = `${y}px`;
+        }
+    });
+
+    yesButton.addEventListener('click', () => {
+        heading.textContent = "Hehe I knew it!";
+        subheading.textContent = "I love you";
+        image.src = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGM3MW92Zms4a3ZtamxibnZidHB1d3FoMWVzdmE3bzhxZWppaWN2OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bA5cblwksWXDOwSzUI/giphy.gif";
+        yesButton.disabled = true;
+        noButton.disabled = true;
+        yesButton.style.display = "none";
+        noButton.style.display = "none";
+    });
+</script> -->
+<script>
+    let clickCount = 0;
+
+    const yesButton = document.getElementById('yesButton');
+    const noButton = document.getElementById('noButton');
+    const heading = document.querySelector('h1');
+    const subheading = document.querySelector('h2');
+    const image = document.getElementById('image');
+    const body = document.body;
+
+    const imageUrls = [
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWZsMDB1dGI5N2djNjk4OHE4bDRudzd6YmIzZ3IyY2oxaGczZTZwbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gDfteqLchLcRTtjAD7/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTltY3oxb2hxa3g1bmQ1cmthYm5lcnBpMWM1ZWdpbXhtaWFobTRjOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/M90mJvfWfd5mbUuULX/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWg4Y3Frc3locThqN3Z0OTUzN2dyZHQxY3F3Ym92bzFnN3RycHE5bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eiRpSPB8OSGVcbkOIJ/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMG54c3J1cXNybThtb2VycGpmbW5paHppcDB0Z2Njd2xxMjN3MXJoMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o6gDZ9unSrDk3EuR2/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnVzZ3U1N2JodG1rMTU5dHVhOHYzM3liaDF3eDR1eGJ1N3YweWgyYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9X8UlqKhaSPz4n7BkW/giphy.gif',
+    ];
+
+    const headings = [
+        "Pah lanche ekda v4 kr.. ", 
+        "chimne punha ekda v4 kr.. ", 
+        "Aik n yr yes vr click kr ", 
+        "Pah last warning .. ", 
+        "nahi na .... thik i .",
+    ];
+
+    const messages = [
+        "ho mhnun tak.. ", 
+        "mhnn n yr ho ...", 
+        "khush thevin yr tul .. ho mhnun tak .. ", 
+        "ata tri taras khaun mhnun tak ho .. ", 
+        "ata krun dakhv nh vr click .. ", 
+    ];
+
+    function updateTextAndImage(count) {
+        image.src = imageUrls[count];
+        heading.textContent = headings[count];
+        subheading.textContent = messages[count];
+    }
+
+    noButton.addEventListener('click', () => {
+        if (clickCount < 5) {
+            updateTextAndImage(clickCount);
+            clickCount++;
+        }
+        if (clickCount === 5) {
+            heading.textContent = "nahi na .... thik i .";
+            noButton.classList.add('move');
+        }
+    });
+
+    noButton.addEventListener('mouseover', () => {
+        if (clickCount === 5) {
+            const x = Math.floor(Math.random() * (window.innerWidth - 100));
+            const y = Math.floor(Math.random() * (window.innerHeight - 50));
+            noButton.style.left = `${x}px`;
+            noButton.style.top = `${y}px`;
+        }
+    });
+
+    yesButton.addEventListener('click', () => {
+        if (clickCount === 5) {
+            // बैकग्राउंड इमेज और स्टाइल सेट करें
+            body.style.backgroundImage = "url('https://raw.githubusercontent.com/prathmeshthakare/image/main/WhatsApp%20Image%2020ss24-12-03%20at%202.25.08%20AM.jpeg')"; 
+            body.style.backgroundSize = "cover";
+            body.style.backgroundColor = "transparent";
+            body.style.display = "flex";
+            body.style.flexDirection = "column";
+            body.style.justifyContent = "center";
+            body.style.alignItems = "center";
+        }
+
+        heading.textContent = "Hehe I knew it!";
+        subheading.textContent = "I love you";
+        image.src = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGM3MW92Zms4a3ZtamxibnZidHB1d3FoMWVzdmE3bzhxZWppaWN2OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bA5cblwksWXDOwSzUI/giphy.gif";
+
+        // Disable buttons and hide them
+        yesButton.disabled = true;
+        noButton.disabled = true;
+        yesButton.style.display = "none";
+        noButton.style.display = "none";
+    });
+</script>
+
+
+</body>
+</html>
